@@ -1,0 +1,173 @@
+:root {
+  --heading-font: "Oswald", sans-serif;
+  --description-font: "Source Sans 3", sans-serif;
+  --main-fontColor: white;
+}
+.openNew {
+  width: 25px;
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+  position: sticky;
+  top: 0;
+}
+.name {
+  /* font-family: var(--heading-font); */
+}
+
+button {
+  /* font-family: var(--description-font); */
+  padding: 8px;
+  border: 1px;
+  background-color: white;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+/* Center of the Page */
+.center {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 3.5em;
+  /* background: yellow; */
+}
+
+.front-end {
+  font-size: 40px;
+}
+
+.description {
+  color: grey;
+  font-size: 100px;
+  font: var(--description-font);
+}
+
+p.description {
+  font-size: 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  /* background: green; */
+  padding-bottom: 12%;
+}
+
+.linkedIn,
+.gitHub,
+.css,
+.html,
+.js,
+.jest,
+.git,
+.webpack,
+.react,
+.boot {
+  padding-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.html {
+  padding-left: 20px;
+}
+/* TechStack */
+.TechStack {
+  display: flex;
+}
+
+.tech-head {
+  border-right: 2px solid grey;
+  padding-right: 20px;
+}
+
+/* About me */
+.aboutMe {
+  /* background-color: yellow; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12%;
+}
+
+h3.aboutMe-head {
+  padding-bottom: 5px;
+}
+
+.laptop {
+  width: 25%;
+  border-radius: 20px;
+}
+
+.about-div {
+  padding-left: 50px;
+  max-width: 30%;
+}
+
+.about-dec {
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+.about-name {
+  padding-bottom: 15px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+  justify-content: center;
+  align-items: center;
+}
+
+.project-dec {
+  padding-bottom: 10px;
+}
+
+.project-head {
+  justify-content: center;
+}
+
+.allProject {
+  display: flex;
+  justify-content: center;
+}
+
+.firstProject {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+.firstProjectImage {
+  width: 20%;
+  border-radius: 20px;
+}
+
+.first-div {
+  padding-left: 25px;
+}
+
+.live {
+  font-size: 20px;
+  display: flex;
+  padding: 5px;
+}
