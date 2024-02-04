@@ -1,7 +1,7 @@
 :root {
   --heading-font: "Oswald", sans-serif;
   --description-font: "Source Sans 3", sans-serif;
-  --main-fontColor: white;
+  --para-color: black;
 }
 .openNew {
   width: 25px;
@@ -17,24 +17,24 @@
   display: flex;
   justify-content: space-between;
   padding: 1.5em;
+  /* color: #0ea5e9; */
   position: sticky;
   top: 0;
 }
-.name {
-  /* font-family: var(--heading-font); */
-}
 
 button {
-  /* font-family: var(--description-font); */
   padding: 8px;
   border: 1px;
-  background-color: white;
+  background-color: none;
   font-size: 1.2rem;
 }
 
 a {
+  padding: 8px;
+  font-size: 1.2rem;
   text-decoration: none;
   color: black;
+  /* color: #0ea5e9; */
   font-weight: bolder;
 }
 
@@ -44,7 +44,6 @@ a {
   display: flex;
   flex-direction: column;
   padding: 3.5em;
-  /* background: yellow; */
 }
 
 .front-end {
@@ -52,7 +51,7 @@ a {
 }
 
 .description {
-  color: grey;
+  color: gray;
   font-size: 100px;
   font: var(--description-font);
 }
@@ -65,7 +64,6 @@ p.description {
   display: flex;
   justify-content: center;
   margin-top: 10%;
-  /* background: green; */
   padding-bottom: 12%;
 }
 
@@ -87,6 +85,7 @@ p.description {
 .html {
   padding-left: 20px;
 }
+
 /* TechStack */
 .TechStack {
   display: flex;
@@ -99,7 +98,6 @@ p.description {
 
 /* About me */
 .aboutMe {
-  /* background-color: yellow; */
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -133,7 +131,6 @@ h3.aboutMe-head {
 .projects {
   display: flex;
   flex-direction: column;
-  /* background-color: green; */
   justify-content: center;
   align-items: center;
 }
@@ -148,10 +145,13 @@ h3.aboutMe-head {
 
 .allProject {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.firstProject {
+.firstProject,
+.secondProject,
+.thirdProject {
   display: flex;
   justify-content: center;
   padding-top: 2%;
@@ -162,12 +162,283 @@ h3.aboutMe-head {
   border-radius: 20px;
 }
 
+.secondProjectImage {
+  width: 20%;
+  border-radius: 20px;
+}
 .first-div {
   padding-left: 25px;
+}
+.second-div {
+  padding-right: 25px;
 }
 
 .live {
   font-size: 20px;
   display: flex;
   padding: 5px;
+}
+
+.technology {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+h4 {
+  padding-left: 25px;
+}
+
+/* Contact Me */
+
+.contactUs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.EmailDiv,
+.PhoneDiv {
+  padding: 20px;
+  display: flex;
+}
+
+.main-contact {
+  display: flex;
+}
+.emailImage {
+  display: flex;
+}
+
+.EmailHeading,
+.email,
+.phoneHeading,
+.number {
+  padding-left: 10px;
+}
+
+.email,
+.number {
+  color: var(--para-color);
+}
+
+/* Footer */
+.Footer {
+  display: flex;
+  color: white;
+  padding: 10px;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.footLink {
+  color: orange;
+  padding: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 1005px) {
+  .linkedIn,
+  .gitHub,
+  .css,
+  .html,
+  .js,
+  .jest,
+  .git,
+  .webpack,
+  .react,
+  .boot {
+    padding-right: 7px;
+    width: 22px;
+    height: 22px;
+  }
+  .TechStack {
+    display: flex;
+    max-width: 100%;
+    /* background-color: green; */
+  }
+
+  .html {
+    padding-left: 10px;
+  }
+  .about-dec,
+  .first-dec {
+    font-size: 25px;
+  }
+
+  .top {
+    justify-content: center;
+    text-align: center;
+    position: static;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .front-end {
+    font-size: 25px;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .laptop {
+    display: none;
+  }
+
+  .aboutMe {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main {
+    padding-bottom: 2%;
+  }
+
+  .first-head {
+    font-size: 30px;
+  }
+
+  .firstProjectImage,
+  .secondProjectImage {
+    width: 50%;
+  }
+
+  .about-name {
+    font-size: 22px;
+  }
+
+  .first-div {
+    padding-top: 20px;
+  }
+
+  .firstProject,
+  .secondProject,
+  .thirdProject {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description {
+    font-size: 25px;
+  }
+  .tech-head,
+  .contact-dec {
+    font-size: 35px;
+  }
+  .front-end {
+    font-size: 35px;
+  }
+  .about-name,
+  .shy {
+    font-size: 30px;
+  }
+  .aboutMe-head,
+  .project-dec {
+    font-size: 25px;
+  }
+
+  .about-div {
+    max-width: 100%;
+  }
+  .second-div {
+    padding-top: 20px;
+    order: 2;
+    padding-left: 20px;
+  }
+  .secondProjectImage {
+    order: 1; /* Order for smaller screens */
+  }
+  .project-head {
+    padding-left: 20px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  .main-contact {
+    flex-direction: column;
+  }
+
+  .EmailDiv,
+  .PhoneDiv {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 780px) {
+  .TechStack {
+    display: flex;
+    max-width: 100%;
+    /* background-color: yellow; */
+  }
+  .about-dec,
+  .first-dec {
+    font-size: 20px;
+  }
+
+  .first-head {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  .project-dec {
+    font-size: 25px;
+  }
+  .first-div,
+  .second-div {
+    padding-top: 20px;
+  }
+
+  .about-dec {
+    font-size: 25px;
+  }
+  .about-name {
+    font-size: 30px;
+  }
+  .aboutMe-head {
+    font-size: 25px;
+  }
+
+  .firstProjectImage,
+  .secondProjectImage {
+    width: 80%;
+  }
+
+  .contact-dec {
+    font-size: 30px;
+  }
+
+  .shy {
+    font-size: 25px;
+  }
+
+  .main-contact {
+    flex-direction: column;
+  }
+
+  .EmailDiv,
+  .PhoneDiv {
+    font-size: 25px;
+  }
+
+  .front-end {
+    font-size: 35px;
+  }
+  .gitHub,
+  .linkedIn {
+    width: 35px;
+    height: 35px;
+  }
 }
