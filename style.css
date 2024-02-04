@@ -239,10 +239,23 @@ h4 {
   color: orange;
   padding: 10px;
 }
-
+.smallScreen {
+  display: none;
+}
 /* Media Queries */
 
 @media (max-width: 1005px) {
+  .center {
+    width: 100%;
+  }
+  .smallScreen {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  .about-name {
+    display: none;
+  }
+
   .linkedIn,
   .gitHub,
   .css,
@@ -368,9 +381,20 @@ h4 {
     flex-direction: column;
   }
 
-  .EmailDiv,
-  .PhoneDiv {
+  .EmailHeading,
+  .phoneHeading {
     font-size: 25px;
+  }
+
+  .contactUs {
+    width: 100%;
+  }
+
+  .EmailDiv,
+  .PhoneDiv,
+  .number,
+  .email {
+    font-size: 20px;
   }
 }
 
